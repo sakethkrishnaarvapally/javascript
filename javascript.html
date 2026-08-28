@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java script examples</title>
+        <script>
+            function showMessage() {
+                alert('This is from internal Java script');
+            }
+            function add() {
+                var num1 = parseFloat(document.getElementById('num1').value);
+                var num2 = parseFloat(document.getElementById('num2').value);
+                var result = num1 + num2;
+                document.getElementById('result').innerHTML = "Result: " + result;
+            }
+            function subtract() {
+                var num1 = parseFloat(document.getElementById('num1').value);
+                var num2 = parseFloat(document.getElementById('num2').value);
+                var result = num1 - num2;
+                document.getElementById('result').innerHTML = "Result: " + result;
+            }
+            function multiply() {
+                var num1 = parseFloat(document.getElementById('num1').value);
+                var num2 = parseFloat(document.getElementById('num2').value);
+                var result = num1 * num2;
+                document.getElementById('result').innerHTML = "Result: " + result;
+            }
+            function divide() {
+                var num1 = parseFloat(document.getElementById('num1').value);
+                var num2 = parseFloat(document.getElementById('num2').value);
+                var result = num1 / num2;
+                document.getElementById('result').innerHTML = "Result: " + result;
+            }
+            function modulus() {
+                var num1 = parseFloat(document.getElementById('num1').value);
+                var num2 = parseFloat(document.getElementById('num2').value);
+                var result = num1 % num2;
+                document.getElementById('result').innerHTML = "Result: " + result;
+            }
+        </script>
+    </head>
+    <body>
+        <h3 style="color:blue; font-size:20px; text-align: center;">
+            In-line Java-Script
+        </h3>
+        <button style="background-color: aqua; color: brown;width: 150px;height: 75px;
+        border-radius: 10px;" onclick="alert('Welcome to Java script')">
+        Click Me!
+        </button>
+        <hr height="5px" color="blue">
+         <h3 style="color:blue; font-size:20px; text-align: center;">
+            Internal Java-Script
+        </h3>
+        <button style="background-color: aqua; color: brown;width: 150px;height: 75px;
+        border-radius: 10px;" onclick="showMessage()">
+        Click Me!
+        </button>
+        <hr height="5px" color="blue">
+        <h3 style="color:blue; font-size:20px; text-align: center;">
+           Arthemetic Operations
+        </h3>
+        <div style="display:flex;">
+            <div style="display:flex; flex-direction: column">
+               <p>Enter the first number:<input type="number" id="num1" placeholder="Enter first number"></p>
+               <p>Enter the second number:<input type="number" id="num2" placeholder="Enter second number"></p>
+            </div>
+        <div style = "display: flex; justify-content:center; align-items: center ; gap: 10px;">
+            <button onclick="add()">Add</button>
+            <button onclick="subtract()">Subtract</button>
+            <button onclick="multiply()">Multiply</button>
+            <button onclick="divide()">Divide</button>
+            <button onclick="modulus()">Modulus</button>
+        </div>
+        <p id="result"></p>
+        </div>
+         
+    </body>
+</html>
