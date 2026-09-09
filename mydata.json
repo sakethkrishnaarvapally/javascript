@@ -1,0 +1,34 @@
+
+{
+    "name":"Prakash",
+    "id":30478,
+    "age":21,
+    "gender":"Male",
+    "address":{
+        "city":"Bangalore",
+        "state":"Karnataka",
+        "country":"India"
+    },
+    "skills":["JavaScript","c","Java","Python"]
+}
+
+
+
+[
+    {
+    "id":1789,
+    "name":"Ramesh",
+    "year":2
+    },
+    {
+        "id":3456,
+        "name":"Suresh",
+        "year":3
+    },
+    {
+        "id":5678,
+        "name":"Mahesh",
+        "year":4
+    }
+
+]

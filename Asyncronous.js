@@ -44,5 +44,26 @@ getStudentName("")
 })
 .catch((error) => {
     console.log("Invalid student name");
-}  )
+})
+
+// async await
+
+function getData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let data = { id: 1, name: "John Doe" };
+            resolve("Data resolved successfully!");
+        }, 2000);
+    });
+}
+
+async function showData() {
+    try {
+        let result = await getData();
+        console.log(result);
+    } catch (error) {
+        console.log("Error:", error);
+    }
+}
+showData();
 
